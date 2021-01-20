@@ -35,6 +35,8 @@
                 * {
         box-sizing: border-box;
         }
+
+      
         input[type=text], select, textarea {
         width: 100%;
         padding: 12px;
@@ -116,7 +118,7 @@
                 <img src="img\contactus.jpg" style="width:100%; margin-top: 50px;">
               </div>
               <div class="column">
-                <form id="contact-form" method="post" action="./new_response.php">
+                <form name="form" method="post" action="./new_response.php">
                   <label for="fname">First Name</label>
                   <input type="text" id="fname" name="fname" placeholder="Your name..">
                   <label for="lname">Last Name</label>
@@ -375,7 +377,7 @@
                  </select>
                   <label for="subject">Subject</label>
                   <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-                  <input type="submit" value="Submit">
+                  <input type="submit" name="submit" value="Send" class="sub-btn">
                 </form>
               </div>
             </div>
@@ -386,7 +388,8 @@
             <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
                 <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
                     <a href="https://www.thesparksfoundationsingapore.org/"><img src="img/logo_small.png"
-                            style="padding:5px; width:42.89px; height:50px; float:left; background: linear-gradient(to top, rgba(254, 254, 254, 0.4), rgba(250, 250, 250, 0));;"></a>
+                            style="padding:5px; width:42.89px; height:50px; float:left; background: linear-gradient(to top, rgba(254, 254, 254, 0.4), rgba(250, 250, 250, 0));;">
+                    </a>
                     <span class="ml-3 text-xl"><a href="https://www.thesparksfoundationsingapore.org/"
                             style="color:#f5b120;font-size:medium;font-weight:bold;">The Sparks Foundation</a></span>
                 </a>
